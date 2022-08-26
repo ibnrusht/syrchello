@@ -1,0 +1,7 @@
+#########
+*.pt
+*.json
+
+##############
+stickers
+.ipynb_checkpoints
