@@ -1,6 +1,8 @@
 #########
 *.pt
 *.json
+*.pickle
+*.txt
 
 ##############
 stickers
