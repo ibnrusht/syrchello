@@ -19,7 +19,7 @@ def message_reply(message):
         prediction_len=128,
         start_text=message.text
     )
-    bot.send_message(message.chat.id, msg)
+    bot.reply_to(message, msg)
 
 if __name__ == "__main__":
     bot.polling(none_stop=True, interval=0)
