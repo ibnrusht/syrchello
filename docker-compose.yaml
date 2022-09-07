@@ -1,0 +1,11 @@
+telegram-bot:
+    build: .
+    hostname: syr-bot
+    restart: always
+    container_name: syr-bot
+
+    volumes:
+        - /srv/syr-conf:/srv/syr-conf
+    
+    command: python3 /opt/syrchello/bot.py
+     
