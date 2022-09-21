@@ -16,8 +16,8 @@ def start(m, res=False):
 
 @bot.message_handler(content_types=['text'])
 def message_reply(message):
-    num = np.random.randint(1, 10)
-    if num < 10:
+    num = np.random.randint(1, 100)
+    if num <= 10:
         model.eval()
         msg = evaluate(
             model,
@@ -28,6 +28,8 @@ def message_reply(message):
             start_text=message.text
             )
         bot.reply_to(message, msg)
+    # else:
+    #     if message.
 
 
 if __name__ == "__main__":
